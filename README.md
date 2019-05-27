@@ -14,3 +14,5 @@
 
 #### 却看到街上的人四处奔逃
 #### 就像那些往事一样
+
+<img src="https://rainy.0x50j.com/images/rain1.jpg">
