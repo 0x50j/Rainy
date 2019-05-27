@@ -16,3 +16,4 @@
 #### 就像那些往事一样
 
 <img src="https://rainy.0x50j.com/images/rain1.jpg">
+<img src="https://rainy.0x50j.com/images/yanye3.gif">
