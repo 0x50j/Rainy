@@ -1,0 +1,50 @@
+<html><head>
+	<meta charset="UTF-8">
+	<title>Rainy Day</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/jquery-ui-1.8.23.custom.css">
+</head>
+<body class="">
+	<img id="background" src="images/rain1.jpg" class="show">
+	<img id="words" src="images/words.png" alt="words">
+	<main id="main">
+		<div id="options" class="show">
+			<ul id="rain_options">
+				<li class="soft_rain rain_type">
+					<ul class="clicked">
+				        <li class="power">
+				        	<a id="rainOn" href="#">on</a> 
+				         	<a id="rainOff" href="#">off</a> 
+				        </li>
+				    </ul>		        
+				</li>
+				<li class="rolling_thunder rain_type">
+					<ul class="">
+				        <li class="power">
+				        	<a id="thunderOn" href="#">on</a> 
+				         	<a id="thunderOff" href="#">off</a> 
+				        </li>   
+				    </ul>		        
+				</li>
+				<li class="loud_thunder rain_type">
+					<ul class="">
+				        <li class="power">
+				        	<a id="loudThunderOn" href="#">on</a> 
+				         	<a id="loudThunderOff" href="#">off</a> 
+				        </li>
+				    </ul>		        
+				</li>
+			</ul>
+		</div>
+		<div id="progressBarContainer" style="display: none;">
+			<div id="progressBar" style="width: 100%;"></div>	
+		</div>	 	
+	</main>
+    <script src="lib/jquery-2.1.0.min.js"></script>
+    <script src="lib/jquery-ui-1.8.23.custom.min.js"></script>
+    <script src="lib/detectmobilebrowser.js"></script>
+	<script src="lib/rainyday/rainyday.js"></script>
+    <script src="lib/soundmanager/script/soundmanager2-nodebug.js"></script>
+	<script src="js/index.js"></script> 
+
+</body></html>

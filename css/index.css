@@ -1,0 +1,243 @@
+body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body.loading {
+  background: #171717;
+}
+#aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 200px;
+  height: 400px;
+  display: none;
+}
+#aside.show {
+  display: block;
+}
+#aside dl {
+  color: #fff;
+  font-size: 16px;
+  font-family: cursive;
+  padding: 0 20px;
+}
+#aside dl dd {
+  line-height: 50px;
+  height: 50px;
+}
+#weather_icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#weather_text {
+  display: inline-block;
+  vertical-align: middle;
+}
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+}
+#background.show {
+  display: block;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#progressBarContainer {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  margin-top: -5px;
+  background: #000000;
+}
+#progressBar {
+  width: 0;
+  height: 1px;
+  margin: 2px 0;
+  background: #2388e7;
+  box-shadow: 0px 0px 10px 1px rgba(0, 200, 255, 0.7);
+}
+#options {
+  width: 416px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 142;
+  display: none;
+}
+#options.show {
+  display: block;
+}
+#options #rain_options {
+  width: 416px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style: none;
+}
+
+}
+#options #rain_options > .rain_type > ul {
+  width: 416px;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  background: 0;
+  float: right;
+  display: inline-block;
+  border: 0;
+}
+#options #rain_options > .rain_type > ul.clicked .volume {
+  background: url(../images/icons/volume_bg.png) 0 0 no-repeat;
+}
+#options #rain_options > .rain_type > ul.clicked .volume div.volume_control a.ui-slider-handle {
+  background: url(../images/icons/volume_handle.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+#options #rain_options > .rain_type > ul > li {
+  width: auto;
+  height: 70px;
+  background: 0;
+  float: left;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#options #rain_options > .rain_type > ul > li.power {
+  width: 108px;
+  height: 70px;
+  background: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#options #rain_options > .rain_type > ul > li.power > a {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+#options #rain_options > .rain_type > ul > li.volume {
+  width: 224px;
+  height: 70px;
+  background: url(../images/icons/volume_bg_off.png) 0 0 no-repeat;
+  position: relative;
+}
+#options #rain_options > .rain_type > ul > li.volume div.volume_control {
+  width: 165px;
+  height: 70px;
+  margin: 0 0 0 37px;
+  background: 0;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+#options #rain_options > .rain_type > ul > li.volume div.volume_control a.ui-slider-handle {
+  width: 31px;
+  height: 33px;
+  cursor: pointer;
+  display: block;
+  background: url(../images/icons/volume_handle_off.png) 0 0 no-repeat;
+  border: 0;
+  border-radius: 0;
+  position: absolute;
+  top: 10px;
+  margin: 10px 0;
+}
+#options #rain_options .soft_rain #rainOn {
+  width: 108px;
+  height: 70px;
+  background: url(../images/icons/rainoff.png) 0 0 no-repeat;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+}
+#options #rain_options .soft_rain #rainOff {
+  width: 108px;
+  height: 70px;
+  background: url(../images/icons/rainon.png) 0 0 no-repeat;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  opacity: 0.5;
+  display: none;
+}
+#options #rain_options .soft_rain .clicked #rainOn {
+  display: none;
+}
+#options #rain_options .soft_rain .clicked #rainOff {
+  display: block;
+}
+#options #rain_options .rolling_thunder #thunderOn {
+  width: 108px;
+  height: 70px;
+  background: url(../images/icons/rollingthunder_off.png) 0 0 no-repeat;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+}
+#options #rain_options .rolling_thunder #thunderOff {
+  width: 108px;
+  height: 70px;
+  background: url(../images/icons/rollingthunder_on.png) 0 0 no-repeat;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  opacity: 0.5;
+  display: none;
+}
+#options #rain_options .rolling_thunder .clicked #thunderOn {
+  display: none;
+}
+#options #rain_options .rolling_thunder .clicked #thunderOff {
+  display: block;
+}
+#options #rain_options .loud_thunder #loudThunderOn {
+  width: 108px;
+  height: 70px;
+  background: url(../images/icons/loudthunder_off.png) 0 0 no-repeat;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+}
+#options #rain_options .loud_thunder #loudThunderOff {
+  width: 108px;
+  height: 70px;
+  background: url(../images/icons/loudthunder_on.png) 0 0 no-repeat;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  opacity: 0.5;
+  display: none;
+}
+#options #rain_options .loud_thunder .clicked #loudThunderOn {
+  display: none;
+}
+#options #rain_options .loud_thunder .clicked #loudThunderOff {
+  display: block;
+}
+#words {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  z-index: 222;
+}
